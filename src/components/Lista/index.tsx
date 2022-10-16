@@ -1,6 +1,6 @@
-import {useState} from 'react';
 import { IDados } from 'types/dados';
 import Item from './Item';
+import style from  './Lista.module.scss';
 
 interface Props {
   dados: IDados[];
@@ -9,15 +9,15 @@ interface Props {
 export default function Lista({dados}: Props) {
   
   return (
-    <aside>
-      <ul>
+    <div>
+      <table className={style.tabela}>
         {dados.map((item, index) => (
           <Item
             key={index}
             {...item}
           />
         ))}
-      </ul>
-    </aside>
+      </table>
+    </div>
   );
 }

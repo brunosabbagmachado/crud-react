@@ -1,8 +1,11 @@
-export default function Item({ nome, email }: { nome: string, email: string }) {
+import style from './Item.module.scss';
+
+export default function Item({ nome, email, date }: { nome: string, email: string, date: string}) {
   return (
-    <li>
-      <p>{nome}</p>
-      <p>{email}</p>
-    </li>
+    <tr className={style.tr}>
+      <td>{nome}</td>
+      <td>{email}</td>
+      <td>{date}</td>
+    </tr>
   );
 }

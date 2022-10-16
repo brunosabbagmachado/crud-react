@@ -1,4 +1,5 @@
 export interface IDados {
   nome: string,
-  email: string
+  email: string,
+  date: string
 }
