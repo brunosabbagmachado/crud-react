@@ -1,23 +1,32 @@
 import { IDados } from 'types/dados';
 import Item from './Item';
-import style from  './Lista.module.scss';
+import style from './Lista.module.scss';
 
 interface Props {
   dados: IDados[];
 }
 
-export default function Lista({dados}: Props) {
-  
+export default function Lista({ dados }: Props) {
+
   return (
-    <div>
-      <table className={style.tabela}>
+    <table className={style.tabela}>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Data de Nascimento</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
         {dados.map((item, index) => (
           <Item
             key={index}
             {...item}
           />
         ))}
-      </table>
-    </div>
+      </tbody>
+    </table>
   );
 }

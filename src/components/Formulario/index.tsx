@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import Botao from 'components/Botao';
 import { IDados } from 'types/dados';
-import style from './Formularo.module.scss';
-import { format } from 'path';
+import style from './Formulario.module.scss';
 
 interface Props {
   setDados: React.Dispatch<React.SetStateAction<IDados[]>>
@@ -13,22 +12,21 @@ export default function Formulario({ setDados }: Props) {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
 
-  const [date, setDate] = useState(new Date().toISOString().split(',')[0]);
+  const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
 
   function adicionarTarefa(evento: React.FormEvent<HTMLFormElement>) {
     evento.preventDefault();
-    
-    setDados(dadosAntigos => [...dadosAntigos, {nome, email, date}]);
+
+    setDados(dadosAntigos => [...dadosAntigos, { nome, email, date }]);
 
     setNome('');
     setEmail('');
   }
 
   return (
-    <main className='conteudo'>
-
-      <div className='principal'>
-        <form className='adicionar' id='novoItem' onSubmit={adicionarTarefa}>
+    <section>
+      <div className={style.principal}>
+        <form className={style.formulario} id='novoItem' onSubmit={adicionarTarefa}>
           <div>
             <label htmlFor='nome'>Nome</label>
             <input
@@ -67,10 +65,10 @@ export default function Formulario({ setDados }: Props) {
           </div>
           <Botao
             type='submit'>
-              Adicionar
+            Adicionar
           </Botao>
         </form>
       </div>
-    </main>
+    </section>
   );
 }
