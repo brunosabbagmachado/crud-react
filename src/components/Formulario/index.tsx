@@ -12,7 +12,7 @@ export default function Formulario({ setDados }: Props) {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
 
-  const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
+  const [date, setDate] = useState(new Date().toISOString().split(',')[0]);
 
   function adicionarTarefa(evento: React.FormEvent<HTMLFormElement>) {
     evento.preventDefault();
@@ -59,7 +59,7 @@ export default function Formulario({ setDados }: Props) {
               id='date'
               value={date}
               onChange={evento => setDate(evento.target.value)}
-              placeholder='Digite seu email'
+              placeholder='dd/mm/yyyy'
               required
             />
           </div>

@@ -15,8 +15,8 @@ export default function Lista({ dados }: Props) {
           <th>Nome</th>
           <th>Email</th>
           <th>Data de Nascimento</th>
-          <th></th>
-          <th></th>
+          <th>Ediar</th>
+          <th>Excluir</th>
         </tr>
       </thead>
       <tbody>

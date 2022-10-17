@@ -1,14 +1,13 @@
 import style from './Botao.module.scss';
 
-const estilo = `${style.estilo}`;
-
 interface Props {
   type?: 'button' | 'submit' | undefined,
   onClick?: () => void,
-  children?: React.ReactNode
+  children?: React.ReactNode,
 }
 
 export default function Botao({ onClick, type, children}: Props) {
+
   return (
     <button
       className={style.botao}

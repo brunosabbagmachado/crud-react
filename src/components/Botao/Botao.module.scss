@@ -1,6 +1,8 @@
+@import '../../styles/variaveis';
+
 .botao {
-  background-color: #d6ae4c;
-  color: white;
+  background-color: $fundo-botao;
+  color: $branco;
   border: 2px solid transparent;
   font-weight: 600;
   padding: 5px 20px;

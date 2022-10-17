@@ -6,10 +6,11 @@
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    
+    background-color: #333333;
+    color: #ffffff;    
 
     & thead tr {
-        background-color: #c34e4e;
+        background-color: #101010;
         color: #ffffff;
         text-align: center;
         font-weight: bold;
@@ -20,7 +21,11 @@
     }
 
     & tbody tr {
-        border-bottom: 1px solid #dddddd;
+        border-bottom: 1px solid #000;
         text-align: center;
     }
+}
+
+.botao {
+    background-color: #c34e4e;
 }

@@ -1,0 +1,44 @@
+@import '../../styles/variaveis';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: $fundo2;
+}
+
+.logo {
+  color: $branco;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: $fundo-botao;
+}
+
+.item {
+  display: inline-block;
+  list-style: none;
+  padding: 10px 25px;
+  color: $branco;
+}
+
+.item:hover {
+  color: $fundo-botao;
+
+}
+
+.item a {
+  color: $branco;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.item a:hover {
+  color: $fundo-botao;
+  transition: .4s;
+}

@@ -1,0 +1,58 @@
+@import '../../styles/variaveis';
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    background-color: $fundo2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome {
+    font-size: 30px;
+    color: $branco;
+    margin-top: .5em;
+    margin-bottom: .1em;
+    font-weight: 500;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid $fundo-botao;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: $branco;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover {
+    background: $fundo-botao;
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.social svg {
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.copy_right {
+    padding-top: .3em;
+    color: $branco;
+    bottom: 35px;
+    font-size: 14px;
+}
+
