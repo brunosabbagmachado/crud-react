@@ -9,15 +9,15 @@ interface Props {
 
 export default function Formulario({ setDados }: Props) {
 
-
+  const [id, setId] = useState('');
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [date, setDate] = useState(new Date().toISOString().split(',')[0]);
-
+  
   function adicionarTarefa(evento: React.FormEvent<HTMLFormElement>) {
     evento.preventDefault();
 
-    setDados(dadosAntigos => [...dadosAntigos, { nome, email, date }]);
+    setDados(dadosAntigos => [...dadosAntigos, { id, nome, email, date }]);
 
     setNome('');
     setEmail('');

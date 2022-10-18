@@ -33,7 +33,7 @@ export default function Lista({ dados }: Props) {
         </thead>
         <tbody>
           {contacts.map((contact, index) => (
-            <tr id={`linha${contact.id}`} key={index}>
+            <tr id='linha' key={index}>
               <td>{contact.nome}</td>
               <td>{contact.email}</td>
               <td>{contact.date}</td>
