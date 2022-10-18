@@ -21,7 +21,7 @@ export default function Footer() {
       </ul>
 
       <p className={styles.copy_right}>
-        Barbearia &copy; 2021
+        CRUDReact &copy; 2021
       </p>
 
     </footer>

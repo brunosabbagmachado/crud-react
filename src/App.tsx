@@ -4,10 +4,10 @@ import Crud from 'pages/Crud';
 
 export default function App() {
   return (
-    <body>
+    <div>
       <Navbar />
       <Crud />
       <Footer />
-    </body>
+    </div>
   );
 }

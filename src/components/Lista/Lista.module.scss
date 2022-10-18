@@ -1,6 +1,6 @@
 .tabela {
     border-collapse: collapse;
-    margin: 25px 10px;
+    margin: 25px 30px;
     font-size: 0.9em;
     min-width: 300px;
     border-radius: 5px 5px 0 0;
@@ -28,4 +28,8 @@
 
 .botao {
     background-color: #c34e4e;
+}
+
+.hide {
+   display: none;
 }

@@ -9,9 +9,9 @@ interface Props {
 
 export default function Formulario({ setDados }: Props) {
 
+
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
-
   const [date, setDate] = useState(new Date().toISOString().split(',')[0]);
 
   function adicionarTarefa(evento: React.FormEvent<HTMLFormElement>) {
@@ -21,6 +21,7 @@ export default function Formulario({ setDados }: Props) {
 
     setNome('');
     setEmail('');
+    setDate('');
   }
 
   return (
@@ -63,8 +64,10 @@ export default function Formulario({ setDados }: Props) {
               required
             />
           </div>
+
           <Botao
-            type='submit'>
+            type='submit'
+          >
             Adicionar
           </Botao>
         </form>
