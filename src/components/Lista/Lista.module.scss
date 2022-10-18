@@ -2,7 +2,7 @@
     border-collapse: collapse;
     margin: 25px 30px;
     font-size: 0.9em;
-    min-width: 300px;
+    min-width: 500px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -17,7 +17,7 @@
     }
 
     & th, td {
-        padding: 12px 15px;
+        padding: 12px 7px;
     }
 
     & tbody tr {
@@ -27,9 +27,6 @@
 }
 
 .botao {
-    background-color: #c34e4e;
+    text-align: center;
 }
 
-.hide {
-   display: none;
-}
